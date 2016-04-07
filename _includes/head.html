@@ -7,9 +7,7 @@
   
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="https://npmcdn.com/tachyons@4.0.0-beta.12/css/tachyons.min.css">
-  <!-- <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"> -->
-  <style>.gold {color: #84762e;}</style>
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="{{ "/favicon-32x32.png" | prepend: site.github.url }}" sizes="32x32">
