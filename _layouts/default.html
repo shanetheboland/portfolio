@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="w-100 sans-serif fade-in" itemscope itemtype="http://schema.org/WebPage">
+  <body class="w-100 sans-serif" itemscope itemtype="http://schema.org/WebPage">
 
     {% include header.html %}
 
@@ -11,7 +11,8 @@
 
     {% include footer.html %}
 
-    {% include javascript.html %}
+    <!-- Load CSS at bottom so it doesn’t block rendering -->
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   </body>
 
 </html>
