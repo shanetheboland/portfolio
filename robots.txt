@@ -1,0 +1,6 @@
+# Allow all robots to crawl all pages
+User-agent: *
+Allow: /
+
+# Hey Robots! This is my sitemap down here
+Sitemap: http://shaneboland.com/sitemap.xml
