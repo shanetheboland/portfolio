@@ -1,7 +1,30 @@
 /* Colors */
+
+// gold text
 .gold {
-	color: #84762e;
+	color: #DC143C;
 }
+
+// gold background
 .bg-gold {
 	background-color: #84762e;
+}
+
+
+.pizza-list {
+	list-style-type: none;
+}
+.pizza-list > li {
+  text-indent: -1.4em;
+}
+.pizza-list > li:before {
+	content: '🍕';
+	display: block;
+	float: left;
+	width: 1.2em;
+	padding-right: 5px;
+}
+
+.pizza-list > li:nth-child(odd):before {
+	content: '💸 ';
 }
