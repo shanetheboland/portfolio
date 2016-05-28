@@ -8,6 +8,8 @@ randomlinks[4]="https://www.youtube.com/watch?v=5fP4emqw7O4"
 randomlinks[5]="https://www.instagram.com/p/BB1VQvJDavp/"
 randomlinks[6]="https://www.youtube.com/watch?v=gbt61vcAkG0"
 randomlinks[7]="http://33.media.tumblr.com/951c3602b40056281a230d3a93393a10/tumblr_inline_nyuwhdNEXO1rusaov_500.gif"
+randomlinks[8]="https://www.youtube.com/watch?v=ALob2IKOHD0"
+randomlinks[9]="https://www.youtube.com/watch?v=gmOTpIVxji8"
 
 function randomlink(){
     window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
