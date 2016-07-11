@@ -1,0 +1,46 @@
+---
+layout: page
+title: Fish
+---
+
+<section class="mw8 center pa3 ph6-ns black-80">
+  <h1 class="f1 f-headline-ns lh-title fw9">Fish</h1>
+</section>
+
+<div class="mw8 center pa3 ph6-ns black-90">
+
+  <p class="f4 f3-ns measure lh-copy">
+    Information about my fish tank
+    <i class="db f5">Updated every minute</i>
+  </p>
+  <p class="f4 f2-ns measure lh-copy">
+    Current Temperature: <span id="js-temperature"></span> 
+  </p>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDM7WTrwb7qch39Map1Fzl7Jqqfet6JaA8",
+    authDomain: "ralphberry-pi.firebaseapp.com",
+    databaseURL: "https://ralphberry-pi.firebaseio.com/",
+    storageBucket: "ralphberry-pi.appspot.com",
+  };
+  firebase.initializeApp(config);
+
+  var ref = firebase.database().ref('temperature');
+
+  //sort them by date, ascending
+  var sortedRef = ref.orderByChild('date').limitToLast(1);
+
+  sortedRef.on("value", function(snapshot) {
+    snapshot.forEach(function(childSnapshot) {
+      var childData = childSnapshot.val().temp;
+      
+      document.getElementById('js-temperature').textContent = childData;
+    });
+  });
+
+</script>

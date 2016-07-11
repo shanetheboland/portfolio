@@ -1,0 +1,17 @@
+Ant Hill Jobs
+Those last two websites were small, so for the third one I thought I’d choose a larger project.
+
+Last summer, I was hired by Ant Hill to come in and help them develop the front-end of their application. I was in charge of a team of two other designers/developers. They had an application up already, but it was ugly, difficult to use, and wasn’t getting any signups.
+
+I went out with the CEO and did market research by interviewing college students and business owners in Saratoga. I drew sketches, made mockups in Photoshop, and wrote the front-end code. The backend uses Ruby on Rails and this part was handled by one of the other two developers. This site uses the Google Maps API. Students can search for jobs by location and pins drop on the map if there is a job nearby.
+
+After the site was up, I sat around in Uncommon Grounds for a week and asked strangers to do user testing sessions. I also monitored the site using Google Analytics, HotJar, and Mixpanel. The HotJar user recordings really helped me improve the usability of the site.
+
+Unfortunately, this business died a few months ago when the CEO returned from a vacation in Hawaii and decided she “wasn’t feeling it” anymore.
+
+If you want to check out the website, you can use my demo login.
+e: shane@delight.consulting
+p: 45b7ttAnthilll
+
+Site: http://anthilljobs.com/
+Code: The code for this project is private. It used to be on GitHub, but it looks like the CEO took it down.
