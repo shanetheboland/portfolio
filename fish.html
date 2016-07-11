@@ -13,8 +13,9 @@ title: Fish
     Information about my fish tank
     <i class="db f5">Updated every minute</i>
   </p>
+
   <p class="f4 f2-ns measure lh-copy">
-    Current Temperature: <span id="js-temperature"></span> 
+    Current Temperature: <span id="js-temperature">75.4</span> 
   </p>
 
 </div>
@@ -39,6 +40,10 @@ title: Fish
     snapshot.forEach(function(childSnapshot) {
       var childData = childSnapshot.val().temp;
       
+<<<<<<< HEAD
+=======
+      // update temperature on page
+>>>>>>> master
       document.getElementById('js-temperature').textContent = childData;
     });
   });
