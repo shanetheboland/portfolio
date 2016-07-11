@@ -9,14 +9,57 @@ title: Fish
 
 <div class="mw8 center pa3 ph6-ns black-90">
 
-  <p class="f4 f3-ns measure lh-copy">
-    Information about my fish tank
-    <i class="db f5">Updated every minute</i>
-  </p>
+  <h2 class="f4 f3-ns measure lh-copy">
+    Fish Tank Data
+    <i class="db f5 fw4">Updated every minute</i>
+  </h2>
 
-  <p class="f4 f2-ns measure lh-copy">
-    Current Temperature: <span id="js-temperature">75.4</span> 
-  </p>
+  <div class="cf">
+    <article class="mw5 bg-white br3 pa3 pa4-ns mv3 ba b--black-10 fl mr3">
+      <div class="tc">
+        <p class="f3 lh-title mb0 fw7"><span id="js-temperature">85.0</span> °F</p>
+        <p class="f5 fw4 gray lh-title mt2">Current Temperature</p>
+      </div>
+    </article>
+
+    <article class="mw5 bg-white br3 pa3 pa4-ns mv3 ba b--black-10 fl">
+      <div class="tc">
+        <p class="f3 lh-title mb0 fw7">Coming Soon</p>
+        <p class="f5 fw4 gray lh-title mt2">More data coming soon</p>
+      </div>
+    </article>
+  </div>
+
+  <h2 class="f4 f3-ns measure lh-copy">
+    The Fish
+    <i class="db f5 fw4">Meet the fish</i>
+  </h2>
+
+  <div class="cf">
+    <article class="bg-white mw5 ba b--black-10 mv4 fl mr3">
+      <div class="pv2 ph3">
+         <h1 class="f6 ttu tracked">Bala</h1>
+      </div>
+      <img src="https://i.ytimg.com/vi/YPdfl3mWScw/hqdefault.jpg" class="w-100 db" alt="Cat yawning">
+      <div class="pa3">
+        <a href="https://en.wikipedia.org/wiki/Red-tailed_black_shark" class="link dim lh-title red">Red-Tailed Shark</a>
+        <p class="black-80 db mb0 f6 lh-copy"><strong>Bala is a big bully.</strong> He likes to sit at the bottom of the tank and chase away any fish that come near his territory. But on the inside he’s just a big softie. He changes color at night.</p>
+
+        <p class="black-80 db mb0 f6 lh-copy">He is named after the three Bala Sharks he killed as a baby.</p>
+      </div>
+    </article>
+
+    <article class="bg-white mw5 ba b--black-10 mv4 fl">
+      <div class="pv2 ph3">
+         <h1 class="f6 ttu tracked">coming soon</h1>
+      </div>
+      <img src="http://www.clipartbest.com/cliparts/LcK/kML/LcKkMLaki.svg" class="w-100 db" alt="Cat yawning">
+      <div class="pa3">
+        <a href="javascript:void(0)" class="link dim lh-title red">More fish coming soon</a>
+      </div>
+    </article>
+  </div>
+
 
 </div>
 
@@ -41,7 +84,7 @@ title: Fish
       var childData = childSnapshot.val().temp;
       
       // update temperature on page
-      document.getElementById('js-temperature').textContent = childData;
+      document.getElementById('js-temperature').innerHTML = childData;
     });
   });
 
