@@ -83,9 +83,10 @@ critical: html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-siz
   sortedRef.on("value", function(snapshot) {
     snapshot.forEach(function(childSnapshot) {
       var childData = childSnapshot.val().temp;
+      var childDataTrimmed = (Math.floor(childData * 100) / 100).toFixed(2);
       
       // update temperature on page
-      document.getElementById('js-temperature').innerHTML = childData;
+      document.getElementById('js-temperature').innerHTML = childDataTrimmed;
     });
   });
 
