@@ -1,0 +1,25 @@
+^XA^CFD
+
+^FO90,80^BY3
+^BCN,180,Y,N,Y
+^FD>;[barcode]^FS
+
+^FO30,370
+^ADN,36^FDBAG: [bagno]  LOT: [lotnumber]^FS
+
+^FO30,472
+^ACN,90^FD[weight] lbs^FS
+
+^FO30,625
+^ADN,36^FDSubstrate Type: [substratetype]^FS
+
+^FO30,690
+^ADN,36^FDSubstrate Lot: [runvariable]^FS
+
+^FO30,795
+^ADN,36^FDInoculum Lot: [inoculumlotnumber]^FS
+
+^FO30,900
+^ADN,36^FD[timestamp]^FS
+
+^XZ
