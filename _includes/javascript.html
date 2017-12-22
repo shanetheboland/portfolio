@@ -1,3 +1,19 @@
 <!-- Includes all necessary javascript files -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> -->
 <!-- <script src="{{ "/js/script.js" | prepend: site.baseurl }}"></script> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://s3-us-west-2.amazonaws.com/ecovative-website-production/js/jquery.min.js"><\/script>')</script>
+
+<script>
+$("body *").mouseenter(function () {
+
+  $(this).animate({
+      top: Math.random() * 400
+  }, 100);
+  $(this).animate({
+      left: Math.random() * 600
+  }, 100);
+
+});
+</script>
